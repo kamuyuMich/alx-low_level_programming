@@ -1,0 +1,2 @@
+#!/bin/bash
+CFILE="your_c_file.c" && FILE_NAME="${CFILE%.*}" && gcc -S -masm=intel "$CFILE" -o "$FILE_NAME.s"
