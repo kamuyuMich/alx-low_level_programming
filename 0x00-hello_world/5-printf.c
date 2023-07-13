@@ -3,7 +3,6 @@
 /**
  * main - This main function prints a statement using printf function
  * Return: 0 (upon success)
- * 
  */
 int main(void)
 {
