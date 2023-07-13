@@ -2,7 +2,7 @@
 
 /**
  * main - the start of the program
- * return - Returns 0 when main function is a success
+ * Return - Returns 0 when main function is a success
  */
 int main(void)
 {
