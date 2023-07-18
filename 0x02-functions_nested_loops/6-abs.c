@@ -10,11 +10,11 @@ int _abs(int n)
 {
 	if (n < 0)
 	{
-		n = n + 2*n;
+		n = n + 2 * n;
 		_putchar(n);
 	}
 	else
 		_putchar(n);
 	_putchar('\n');
-	return 0;
+	return n;
 }
