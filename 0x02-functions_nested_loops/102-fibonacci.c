@@ -16,8 +16,9 @@ int main(void)
 	{
 		numbers[i] = numbers[i - 1] + numbers[i - 2];
 	}
+	printf("%lu", numbers[0]);
 
-	for (i = 0; i < 50; i++)
+	for (i = 1; i < 50; i++)
 	{
 		printf(", %lu", numbers[i]);
 	}
