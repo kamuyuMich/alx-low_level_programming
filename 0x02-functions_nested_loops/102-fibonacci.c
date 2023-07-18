@@ -19,7 +19,7 @@ int main(void)
 
 	for (i = 0; i < 50; i++)
 	{
-		printf("%lu, ", numbers[i]);
+		printf(", %lu", numbers[i]);
 	}
 	printf("\n");
 	return (0);
