@@ -7,7 +7,7 @@
 int main(void)
 {
 	int i;
-        unsigned long long numbers[50];
+        unsigned long numbers[50];
 
 	numbers[0] = 1;
 	numbers[1] = 2;
@@ -19,7 +19,7 @@ int main(void)
 
 	for (i = 0; i < 50; i++)
 	{
-		printf("%llu, ", numbers[i]);
+		printf("%lu, ", numbers[i]);
 	}
 	printf("\n");
 	return (0);
