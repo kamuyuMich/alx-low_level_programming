@@ -6,7 +6,8 @@
 
 int main(void)
 {
-	int i, numbers[50];
+	int i;
+        unsigned long long numbers[50];
 
 	numbers[0] = 1;
 	numbers[1] = 2;
@@ -16,9 +17,9 @@ int main(void)
 		numbers[i] = numbers[i - 1] + numbers[i - 2];
 	}
 
-	for (i = 0; i <= 50; i++)
+	for (i = 0; i < 50; i++)
 	{
-		printf("%d, ", numbers[i]);
+		printf("%llu, ", numbers[i]);
 	}
 	printf("\n");
 	return (0);
