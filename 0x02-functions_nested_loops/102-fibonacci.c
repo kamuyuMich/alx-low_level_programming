@@ -7,12 +7,12 @@
 int main(void)
 {
 	int i;
-        unsigned long numbers[50];
+	unsigned long numbers[50];
 
 	numbers[0] = 1;
 	numbers[1] = 2;
 
-	for (i = 2; i < 49; i++)
+	for (i = 2; i < 50; i++)
 	{
 		numbers[i] = numbers[i - 1] + numbers[i - 2];
 	}
