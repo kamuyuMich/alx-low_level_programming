@@ -9,7 +9,8 @@ int main(void)
 {
 	int i, sum1, sum2, result;
 
-	sum1, sum2 = 0;
+	sum1 = 0;
+	sum2 = 0;
 	for (i = 1; i < 1024; i++)
 	{
 		if (i % 3 == 0)
