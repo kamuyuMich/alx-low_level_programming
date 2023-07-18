@@ -6,16 +6,16 @@
 
 int main(void)
 {
-        int i, sum = 0;
-        unsigned long numbers[50];
+	int i, sum = 0;
+	unsigned long numbers[50];
 
-        numbers[0] = 1;
-        numbers[1] = 2;
+	numbers[0] = 1;
+	numbers[1] = 2;
 
-        for (i = 2; i < 50; i++)
-        {
-                numbers[i] = numbers[i - 1] + numbers[i - 2];
-        }
+	for (i = 2; i < 50; i++)
+	{
+		numbers[i] = numbers[i - 1] + numbers[i - 2];
+	}
 
 	for (i = 0; i < 50; i++)
 	{
