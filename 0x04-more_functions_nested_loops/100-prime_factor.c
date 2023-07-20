@@ -7,15 +7,22 @@
 
 int main(void)
 {
-	unsigned long int i, n;
+	unsigned long int n, i;
 
 	n = 6112852475143;
 
-	for (i = 3; i < 782849; i = i + 2)
+	while (n % 2 == 0)
 	{
-		while ((n % i == 0) && (n != i))
+		n /= 2;
+	}
+
+	for (i = 3; i * i <= n; i += 2)
+	{
+		while ((n % i == 0))
 			n = n / i;
 	}
+
+	/* res = (n > 2) ? n : 2; */
 	printf("%lu\n", n);
 	return (0);
 }
