@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strcat - concatenates strings
@@ -9,21 +10,20 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char *original_dest = dest;
+	int dlen = 0, i;
 
-	while (*dest != '\0')
+	while (dest[dlen]) 
 	{
-		dest++;
+		dlen++
+	}
+	
+	for (i = 0; src[i] != 0; i++)
+	{
+		dest[dlen] = src[i];
+		dlen++;
 	}
 
-	while (*src != '\0')
-	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
+	dest[dlen]  = '\0';
 
-	*dest = '\0';
-
-	return (original_dest);
+	return (dest);
 }
