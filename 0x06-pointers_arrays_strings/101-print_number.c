@@ -8,22 +8,17 @@
 
 void print_number(int n)
 {
+	unsigned int n1;
+
+	n1 = n;
 	if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
+		n1 = -n;
 	}
-
-	/* Recursive base case */
-	if (n / 10 == 0)
+	if (n1 / 10 != 0)
 	{
-		_putchar('0' + n);
-		return;
+		print_number(n1 / 10);
 	}
-
-	/* Recursive call to print the remaining digits */
-	print_number(n / 10);
-
-	/* Print the current digit */
-	_putchar('0' + n % 10);
+	_putchar((n1 % 10) + '0');
 }
