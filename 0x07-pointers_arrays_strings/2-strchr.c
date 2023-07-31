@@ -1,5 +1,5 @@
 #include "main.h"
-#define NOT_FOUND ((char *)0)
+#include <stdio.h>
 
 /**
  * _strchr - Locates a given character in a string
@@ -19,5 +19,5 @@ char *_strchr(char *s, char c)
 		}
 		s++;
 	}
-	return (NOT_FOUND);
+	return (NULL);
 }
