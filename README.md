@@ -1,1 +1,1 @@
-_This repository explores the C programming for the first time as an ALX student_
+_This repository focuses on different aspects of C_
